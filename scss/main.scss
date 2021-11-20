@@ -18,11 +18,13 @@ html {
   font-size: 16px;
 } 
 
-body {
+body { 
+  height: 100vh;
   background-color: $very-dark-blue-bg;
   color: $white;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -40,7 +42,7 @@ body {
 
     &:hover .card__hidden{
       opacity: 1;
-  }
+    }
   } 
 
   &__hidden {
