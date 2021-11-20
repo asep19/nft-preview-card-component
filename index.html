@@ -6,26 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Preview card component</title>
   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <img src="images/image-equilibrium.jpg" alt="" class="card__img">
-      <h4 class="card__title">Equilibrium #3429</h4>
-      <p class="card__desc">
+      <div class="card__img">
+        <a href="">
+          <img src="images/image-equilibrium.jpg" alt="" class="card__img">
+          <div class="card__hidden">
+            <img src="images/icon-view.svg" alt="">
+          </div>
+        </a>
+      </div>
+      <h4 class="card__title"><a href="">Equilibrium #3429</a></h4>
+      <p class="card__desc text-light">
         Our Equilibrium collection promotes balance and calm.
       </p>
-      <p>
-        <span>0.041 ETH</span>
-        <span>3 days left</span>
-      </p>
-      <div>
-        <div class="card__avatar">
-          <img src="images/image-avatar.png" alt="">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-center">
+          <img class="icon" src="images/icon-ethereum.svg" alt="">
+          <span class="eth"> 0.041 ETH</span>
         </div>
+        <div class="d-flex align-center">
+          <img class="icon" src="images/icon-clock.svg" alt="">
+          <span class="text-light"> 3 days left</span>
+        </div> 
+      </div>
+      <hr>
+      <div class="d-flex align-center mb-1">
+        <img class="card__avatar" src="images/image-avatar.png" alt="">
         <div class="card__author">
-          Creation of Jules Wyvern
-        </div>
+          <span class="text-light">Creation of</span> <a href="">Jules Wyvern
+          </div></a>
       </div>
     </div>
   </div>
